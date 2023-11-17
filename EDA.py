@@ -5,6 +5,8 @@ from ydata_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 
 
+backgroundColor = "#F0F0F0"
+
 st.markdown('''
 
 # **EDA Application**
@@ -43,7 +45,8 @@ else:
             return csv
         df = load_csv()
         pr = ProfileReport(df, explorative=True)
-        st.header('**Input Dataframe**')
+        st.header('**Example Dataframe**')
+        st.write('*This is an example dataset of different store and their customers.*')
         st.write(df)
         st.write('---')
         st.header('**Pandas Profile Report**')
