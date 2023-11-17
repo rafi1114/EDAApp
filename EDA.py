@@ -5,13 +5,12 @@ from ydata_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 
 
-backgroundColor = "#F0F0F0"
 
 st.markdown('''
 
-# **EDA Application**
+# **Exploratory Data Analysis Solution**
             
-Making life easy to work with Data
+Making your life easy while working with Data
 
 
 ''')
@@ -29,7 +28,7 @@ if uploaded_file is not None:
         return csv
     df = load_csv()
     pr = ProfileReport(df, explorative=True)
-    st.header('**Input Dataframe**')
+    st.header('**Your Dataframe**')
     st.write(df)
     st.write('---')
     st.header('**Pandas Profile Report**')
