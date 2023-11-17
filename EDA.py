@@ -17,7 +17,7 @@ Making life easy to work with Data
 with st.sidebar.header('1. Upload Your CSV Data'):
     uploaded_file = st.sidebar.file_uploader("Upload your CSV file", type=["csv"])
     st.sidebar.markdown('''
-[Example CSV Input File](https://github.com/rafi1114/EDA-App/blob/main/Different_stores_dataset.csv)
+[Example CSV Input File](https://github.com/rafi1114/EDAApp/blob/main/Different_stores_dataset.csv)
 ''')
     
 if uploaded_file is not None:
