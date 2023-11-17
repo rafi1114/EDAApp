@@ -1,0 +1,5 @@
+numpy
+pandas
+streamlit==1.28.2
+ydata_profiling == 4.6.1
+streamlit_pandas_profiling == 0.1.3
